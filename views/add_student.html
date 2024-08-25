@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Student Management System</title>
+</head>
+<body>
+  <h1>Student Management System</h1>
+
+  <!-- Add Student Form -->
+  <form id="addStudentForm">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" required>
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" required>
+
+    <label for="studentId">Student ID:</label>
+    <input type="text" id="studentId" name="studentId" required>
+
+    <label for="semester">Semester:</label>
+    <input type="text" id="semester" name="semester" required>
+
+    <label for="courses">Courses:</label>
+    <select id="courses" name="courses" multiple>
+      <option value="Course1">Web Development</option>
+      <option value="Course2">Database Programming</option>
+      <option value="Course3">Cloud Computing</option>
+    </select><br><br>
+
+    <button type="button" onclick="addStudent()">Add Student</button>
+  </form>
+  <script src="app.js"></script>
+
+</body>

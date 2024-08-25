@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modify Student</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <h1>Modify Student</h1>
+  <form id="modifyStudentForm">
+    <label for="studentId">Existing Student ID:</label>
+    <input type="text" id="studentId" name="studentId" required>
+
+    <label for="newFirstName">New First Name:</label>
+    <input type="text" id="newFirstName" name="newFirstName">
+
+    <label for="newLastName">New Last Name:</label>
+    <input type="text" id="newLastName" name="newLastName" required>
+
+
+
+    <label for="newSemester">New Semester:</label>
+    <input type="text" id="newSemester" name="newSemester" required>
+
+    <label for="newCourses">New Courses:</label>
+    <select id="newCourses" name="newCourses" multiple>
+      <option value="Course1">Web Development</option>
+      <option value="Course2">Database Programming</option>
+      <option value="Course3">Cloud Computing</option>
+    </select><br><br>
+
+    <button type="button" onclick="modifyStudent()">Modify Student</button>
+  </form>
+
+<script src="app.js"></script>
+<script>
+      document.addEventListener('DOMContentLoaded', fetchAndDisplayCourses);
+
+</script>
+</body>
+</html>
